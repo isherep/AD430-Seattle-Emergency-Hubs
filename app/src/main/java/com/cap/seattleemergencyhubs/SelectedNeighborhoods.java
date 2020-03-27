@@ -49,7 +49,7 @@ public class SelectedNeighborhoods extends AppCompatActivity {
 
     private ArrayList<Hub> currentNeighborhoodHubs = new ArrayList<>();
     private static final String TAG = "Neighborhoods Activity";
-    private String firstSelectedNeighbName = currentNeighborhoodHubs.get(0).getNeighborhood().toUpperCase();
+    private String firstSelectedNeighbName;
     Button popUpMapLegendButton, closePopupBtn;
     PopupWindow popupWindow;
     ScrollView linearLayout1;
@@ -86,6 +86,7 @@ public class SelectedNeighborhoods extends AppCompatActivity {
             currentNeighborhoodHubs = (ArrayList<Hub>) bundle.getSerializable("neighborhoodName");
             Log.i("ArrayList ", currentNeighborhoodHubs.toArray().toString());
             if (currentNeighborhoodHubs != null) {
+                firstSelectedNeighbName = currentNeighborhoodHubs.get(0).getNeighborhood().toUpperCase();
                 Log.i(" *** Current hubs list ", firstSelectedNeighbName);
             }
         }

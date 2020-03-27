@@ -15,9 +15,9 @@ public class FaqMain extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.faqmain);
 
-        expandableTextView=findViewById(R.id.eTV);
-        ExpandableTextViewAdapter adapter= new ExpandableTextViewAdapter(FaqMain.this);
-        expandableTextView.setAdapter(adapter);
+//        expandableTextView=findViewById(R.id.eTV);
+//        ExpandableTextViewAdapter adapter= new ExpandableTextViewAdapter(FaqMain.this);
+//        expandableTextView.setAdapter(adapter);
 
     }
 

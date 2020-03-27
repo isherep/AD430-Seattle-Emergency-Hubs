@@ -189,9 +189,9 @@ public class MainActivity extends AppCompatActivity
             Intent intent = new Intent(MainActivity.this, ResourseActivity.class);
             startActivity(intent);
 
-        } else if (id == R.id.nav_blog) {
-            Intent intent = new Intent(MainActivity.this, AnnouncementsActivity.class);
-            startActivity(intent);
+//        } else if (id == R.id.nav_blog) {
+//            Intent intent = new Intent(MainActivity.this, AnnouncementsActivity.class);
+//            startActivity(intent);
 
 
         } else if (id == R.id.nav_contact) {
