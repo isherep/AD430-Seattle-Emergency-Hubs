@@ -105,9 +105,10 @@
         android:background="#F09956"
         android:fontFamily="@font/roboto"
         android:onClick="onButtonClick"
-        android:text="STEP 2 - CLICK HERE"
+        android:text="NEXT - CLICK HERE"
         android:textColor="#FFFFFF"
         android:textSize="20sp"
+        android:padding="5dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/hubsmap" />

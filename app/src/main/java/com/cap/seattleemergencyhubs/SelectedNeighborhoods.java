@@ -60,17 +60,25 @@ public class SelectedNeighborhoods extends AppCompatActivity {
             "Hub",
             "Block Watch",
             "SNAP",
-            "CERT",
-            "MYN"
+            "CERT"
     };
 
-    Integer[] imgid={
+    String[] itemDesc = {
+            "Place where people gather after a disaster to help each other. \nHas a hand radio operator, chairs, and an emergency box",
+            "Doesn't have a radio operator",
+            "Meet location of neighborhood block watch",
+            "Seattle Neighborhoods Actively Prepare. Used to organize people.",
+            "Community Emergency Response Team",
+
+    };
+
+    Integer[] imgid ={
             R.drawable.emer_hub_icon,
             R.drawable.non_emer_icon,
             R.drawable.block_watch_icon,
             R.drawable.snap_icon,
             R.drawable.cert_icon,
-            R.drawable.myn_icon
+
     };
 
     @Override
@@ -156,9 +164,10 @@ public class SelectedNeighborhoods extends AppCompatActivity {
         listView.setDividerHeight(10);
 
 
-        CustomListAdapter adapter2=new CustomListAdapter(this, itemname, imgid);
+        CustomListAdapter mapLegentAdapter=new CustomListAdapter(this, itemname, itemDesc, imgid);
+
         list=(ListView)findViewById(R.id.list);
-        list.setAdapter(adapter2);
+        list.setAdapter(mapLegentAdapter);
 
         list.setOnItemClickListener(new OnItemClickListener() {
 

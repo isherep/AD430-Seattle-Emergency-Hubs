@@ -13,13 +13,15 @@ public class CustomListAdapter extends ArrayAdapter<String> {
     private final Activity context;
     private final String[] itemname;
     private final Integer[] imgid;
+    private final String[] itemDesc;
 
-    public CustomListAdapter(Activity context, String[] itemname, Integer[] imgid) {
+    public CustomListAdapter(Activity context, String[] itemname, String[] itemDesc, Integer[] imgid) {
         super(context, R.layout.legend_icons_list, itemname);
         // TODO Auto-generated constructor stub
 
         this.context=context;
         this.itemname=itemname;
+        this.itemDesc = itemDesc;
         this.imgid=imgid;
     }
 
@@ -33,7 +35,7 @@ public class CustomListAdapter extends ArrayAdapter<String> {
 
         txtTitle.setText(itemname[position]);
         imageView.setImageResource(imgid[position]);
-        extratxt.setText("Description "+itemname[position]);
+        extratxt.setText(itemDesc[position]);
         return rowView;
 
     };
