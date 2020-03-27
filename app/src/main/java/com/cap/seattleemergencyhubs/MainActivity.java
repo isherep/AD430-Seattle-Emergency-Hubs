@@ -163,7 +163,11 @@ public class MainActivity extends AppCompatActivity
 
         } else if (id == R.id.nav_about) {
 
-            Intent intent = new Intent(MainActivity.this, AboutActivity.class);
+//            Intent intent = new Intent(MainActivity.this, AboutActivity.class);
+//
+//            startActivity(intent);
+
+            Intent intent = new Intent(MainActivity.this, FaqMain.class);
 
             startActivity(intent);
 
@@ -197,9 +201,6 @@ public class MainActivity extends AppCompatActivity
         } else if (id == R.id.nav_contact) {
             Intent intent = new Intent(MainActivity.this, ContactActivity.class);
             startActivity(intent);
-
-
-
         }
 
         DrawerLayout drawer = findViewById(R.id.drawer_layout);
