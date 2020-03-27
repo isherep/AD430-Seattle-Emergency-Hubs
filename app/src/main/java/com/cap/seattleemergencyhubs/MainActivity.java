@@ -1,5 +1,6 @@
 package com.cap.seattleemergencyhubs;
 
+import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -78,6 +79,40 @@ public class MainActivity extends AppCompatActivity
         drawer.addDrawerListener(toggle);
         toggle.syncState();
         navigationView.setNavigationItemSelectedListener(this);
+    }
+
+    public void buttonOnClick(View view) {
+        Log.i("On button click", "started");
+        Log.i("View ", view.toString());
+
+
+                Intent emailIntent = new Intent(
+                        android.content.Intent.ACTION_SEND);
+                emailIntent.setAction(Intent.ACTION_SEND);
+                emailIntent.setType("message/rfc822");
+                emailIntent.putExtra(android.content.Intent.EXTRA_EMAIL,
+                        new String[] { "info@seattleemergencyhubs.org" });
+                emailIntent.putExtra(android.content.Intent.EXTRA_CC, "");
+
+                emailIntent.putExtra(android.content.Intent.EXTRA_BCC, "");
+                emailIntent.putExtra(android.content.Intent.EXTRA_SUBJECT,
+                        "");
+                //emailIntent.putExtra(Intent.EXTRA_TEXT, Html.fromHtml(Detail));
+                emailIntent.setType("text/html");
+                //emailIntent.setData(Uri.parse("mailto:info@seattleemergencyhubs.org"));
+
+// FOLLOWING STATEMENT CHECKS WHETHER THERE IS ANY APP THAT CAN HANDLE OUR EMAIL INTENT
+                try {
+                    startActivity(Intent.createChooser(emailIntent,
+                            "Send Email Using: "));
+                } catch (ActivityNotFoundException e) {
+                    // Handle case where no email app is available
+
+                }
+
+                Log.i("Started emailIntent", "activity");
+
+
     }
 
     public void onButtonClick(View v){	
