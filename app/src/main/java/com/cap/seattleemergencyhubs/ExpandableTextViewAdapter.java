@@ -13,23 +13,25 @@ public class ExpandableTextViewAdapter extends BaseExpandableListAdapter {
     Context context;
 
     String[] faqs={
-            "Question number 1",
-            "Question number 2",
-            "Question number 3"
+            "What is Seattle Community Emergency Hub?",
+            "Who is managing and financing Emergency Hubs?",
+            "Does the Hub have water and food?"
     };
 
     String[][] answer={
-            {"Answer to question number 1, Answer to question number 1Answer to question number 1, Answer to question number 1\n\n"+
-                    "Answer to question number 1Answer to question number 1 Answer to question number 1\n"+
-                    "Answer to question number 1 Answer to question number 1 Answer to question number 1 Answer to question number 1"},
+            {"A Seattle Community Emergency Hub is a pre-determined location where neighbors and community members are likely to gather to begin exchanging information and resources.\n\n" +
+                    " SEH does not use outside assistance from City services. \n\n" +
+                    "The hub mission is accomplished SOLELY through community volunteers. \n\n"
+                    },
 
 
-            {"Answer to question number 2, bla bla bla, Answer to question number 2, bla bla bla, Answer to question number 2, bla bla bla\n"+
-            "Answer to question number 2, bla bla bla, Answer to question number 2, bla bla bla, Answer to question number 2, bla bla bla"},
+            {"The hub mission is accomplished SOLELY through community volunteers.\n" },
 
 
-            {"Answer to questions number 3,Answer to questions number 3,Answer to questions number 3,\n"+
-            "Answer to questions number 3,Answer to questions number 3,Answer to questions number 3,Answer to questions number 3,"}
+            {"Hubs DO NOT HAVE food and water,\n\n"+
+            "Your hub will have emergency box that helps community to get organized. \n\nThis box contains chairs, gloves, necessary paperwork\n\n" +
+                    "You need to have food and water saved for emergency in you house."
+                    }
     };
 
 
@@ -83,7 +85,7 @@ public class ExpandableTextViewAdapter extends BaseExpandableListAdapter {
         }
 
         TextView questionFaq2=convertView.findViewById(R. id.faqTitleView);
-        questionFaq2.setTypeface(null, Typeface.BOLD);
+        questionFaq2.setTypeface(null, Typeface.NORMAL);
         questionFaq2.setText(questionFaq);
         return convertView;
     }

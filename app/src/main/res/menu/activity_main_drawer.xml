@@ -18,11 +18,11 @@
             android:title="@string/menu_slideshow" />
         <item
             android:id="@+id/nav_resources"
-            android:icon="@drawable/ic_menu_manage"
+            android:icon="@drawable/ic_info_for"
             android:title="@string/menu_tools" />
         <item
             android:id="@+id/nav_faq"
-            android:icon="@drawable/ic_menu_manage"
+            android:icon="@drawable/ic_info_for"
             android:title="FAQ" />
     </group>
 
