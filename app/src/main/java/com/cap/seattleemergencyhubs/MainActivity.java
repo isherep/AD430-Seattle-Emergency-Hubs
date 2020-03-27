@@ -163,12 +163,7 @@ public class MainActivity extends AppCompatActivity
 
         } else if (id == R.id.nav_about) {
 
-//            Intent intent = new Intent(MainActivity.this, AboutActivity.class);
-//
-//            startActivity(intent);
-
-            Intent intent = new Intent(MainActivity.this, FaqMain.class);
-
+            Intent intent = new Intent(MainActivity.this, AboutActivity.class);
             startActivity(intent);
 
         } else if (id == R.id.nav_neighborhood) {
@@ -193,9 +188,9 @@ public class MainActivity extends AppCompatActivity
             Intent intent = new Intent(MainActivity.this, ResourseActivity.class);
             startActivity(intent);
 
-//        } else if (id == R.id.nav_blog) {
-//            Intent intent = new Intent(MainActivity.this, AnnouncementsActivity.class);
-//            startActivity(intent);
+        } else if (id == R.id.nav_faq) {
+            Intent intent = new Intent(MainActivity.this, FaqMain.class);
+            startActivity(intent);
 
 
         } else if (id == R.id.nav_contact) {

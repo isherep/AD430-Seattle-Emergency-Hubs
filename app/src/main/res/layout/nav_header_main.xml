@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="@dimen/nav_header_height"
+    android:layout_height="wrap_content"
     android:background="@drawable/side_nav_bar"
     android:gravity="bottom"
     android:orientation="vertical"
@@ -14,11 +14,11 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="130dp"
+        android:layout_height="110dp"
         android:contentDescription="@string/nav_header_desc"
         android:paddingTop="@dimen/nav_header_vertical_spacing"
-        app:srcCompat="@mipmap/ic_emegency_hub" />
+        app:srcCompat="@drawable/emerfigtwo" />
 
     <TextView
         android:layout_width="match_parent"
@@ -28,7 +28,8 @@
         android:text="@string/nav_header_title"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         android:textColor="#2A2B33"
-        android:textSize="16sp" />
+        android:paddingBottom="10dp"
+        android:textSize="21sp" />
 
     <TextView
         android:id="@+id/textView"
@@ -37,6 +38,7 @@
         android:fontFamily="@font/roboto"
         android:text="@string/nav_header_subtitle"
         android:textColor="#2A2B33"
+        android:paddingTop="10dp"
         android:textSize="18sp" />
 
 </LinearLayout>
