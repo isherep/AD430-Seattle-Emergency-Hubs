@@ -12,10 +12,10 @@
         android:id="@+id/textContactView"
         android:layout_width="331dp"
         android:layout_height="197dp"
-        android:layout_marginStart="34dp"
+        android:layout_marginStart="3dp"
         android:layout_marginEnd="34dp"
         android:layout_marginBottom="223dp"
-        android:text="Or Call us or Email us below\n\n
+        android:text="Call us or Email us below\n\n
         206-933-6968\n
         info@seattleemergencyhubs.org"
         android:textSize="22dp"
@@ -39,5 +39,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

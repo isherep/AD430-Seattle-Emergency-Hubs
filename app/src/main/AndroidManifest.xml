@@ -63,7 +63,7 @@
 
         <activity
             android:name=".ContactActivity"
-            android:label="@string/title_selected_neighborhoods"
+            android:label="CONTACTS"
             android:parentActivityName=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar" />
 
