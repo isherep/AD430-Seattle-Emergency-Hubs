@@ -20,7 +20,7 @@ public class ExpandableTextViewAdapter extends BaseExpandableListAdapter {
 
     String[][] answer={
             {"A Seattle Community Emergency Hub is a pre-determined location where neighbors and community members are likely to gather to begin exchanging information and resources.\n\n" +
-                    " SEH does not use outside assistance from City services. \n\n" +
+                    "SEH does not use outside assistance from City services. \n\n" +
                     "The hub mission is accomplished SOLELY through community volunteers. \n\n"
                     },
 
