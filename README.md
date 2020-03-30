@@ -1,8 +1,24 @@
 # AD430-Seattle-Emergency-Hubs
 
-This is the description from the customer (will update by next week):
 
-This is the website where folks can find the Emergency Communication Hubs.  The map is interactive.  
+This is an Android App where folks can find the Emergency Communication Hubs.  The map is interactive.
+
+Hubs are just meeting spots where neighbors will naturally gather to help one another post-disaster.  Some of them have volunteers who have gotten organized and prepositioned supplies to help neighbors exchange information.  Of the sites that are organized, many of them have a box that looks like the attached photo.
+
+## Application Main Page
+
+![](screenshots/main.png)
+
+## Selected neighborhood Page
+#### Displays nearest emergency hubs, their type, hub captain and contact information
+![](screenshots/neighborhood.png)
+
+## Navigation
+![](screenshots/navigation.png)
+
+## Frequently Asked Questions Expandable Pop UPs
+![](screenshots/FAQ.png)
+
 
 http://seattleemergencyhubs.org/seattle-emergency-neighborlink-map/
 Seattle Emergency NeighborLink Map | Seattle Emergency Hubs | Seattle, WA
