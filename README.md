@@ -14,7 +14,7 @@ Some of them have volunteers who have gotten organized and prepositioned supplie
 
 ## Application Main Page
 
-![](screenshots/main.png)
+![](screenshots/main.png | width=48)
 
 ## Selected neighborhood Page
 #### Displays nearest emergency hubs, their type, hub captain and contact information
