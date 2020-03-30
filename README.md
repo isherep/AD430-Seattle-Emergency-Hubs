@@ -1,9 +1,16 @@
 # AD430-Seattle-Emergency-Hubs
 
 
-This is an Android App where folks can find the Emergency Communication Hubs.  The map is interactive.
+### This is an Android App where folks can find the Emergency Communication Hubs.
 
-Hubs are just meeting spots where neighbors will naturally gather to help one another post-disaster.  Some of them have volunteers who have gotten organized and prepositioned supplies to help neighbors exchange information.  Of the sites that are organized, many of them have a box that looks like the attached photo.
+Hubs are just meeting spots where neighbors will naturally gather to help one another post-disaster.
+Some of them have volunteers who have gotten organized and prepositioned supplies to help neighbors exchange information.  Of the sites that are organized, many of them have a box that looks like the attached photo.
+
+##### Google Firebase database was created to store information about hubs.
+##### The application retrieves Hubs information from Google Firebase database.
+##### User selects a neighborhood on the main page and his selection is saved untill the next time app is opened.
+##### After choosing a neighborhood, the user can see the closest available emergency hubs and their types in the Neighborhoods activity.
+##### The selected neighborhood information will be displayed even if all signals and wifi connections are lost, which is likely in the event of major earthquake.
 
 ## Application Main Page
 
