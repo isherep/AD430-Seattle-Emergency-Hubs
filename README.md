@@ -8,10 +8,9 @@ Some of them have volunteers who have gotten organized and prepositioned supplie
 
 ##### Google Firebase database was created to store information about hubs.
 ##### The application retrieves Hubs information from Google Firebase database.
-
 ##### User selects a neighborhood on the main page and his selection is saved untill the next time app is opened.
-##### The selected neighborhood information will be displayed even if all signals and wifi connections are lost, which is
-##### likely in the event of major earthquake.
+##### After choosing a neighborhood, the user can see the closest available emergency hubs and their types in the Neighborhoods activity.
+##### The selected neighborhood information will be displayed even if all signals and wifi connections are lost, which is likely in the event of major earthquake.
 
 ## Application Main Page
 
