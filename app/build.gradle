@@ -2,19 +2,23 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 29
+    lintOptions {
+        checkReleaseBuilds false
+    }
 
     defaultConfig {
-        applicationId "com.cap.seattleemergencyhubs"
+        applicationId "com.cap.emergencyhubsofseattle"
         minSdkVersion 21
         targetSdkVersion 29
-        versionCode 3
-        versionName "3.0"
+        versionCode 1
+        versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary = true
     }
     buildTypes {
         release {
             minifyEnabled false
+            debuggable false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }

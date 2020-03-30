@@ -20,7 +20,7 @@
         info@seattleemergencyhubs.org"
         android:textSize="22dp"
         android:autoLink="phone"
-        android:linksClickable="true" 
+        android:linksClickable="true"
         android:textStyle="bold|italic"
         android:gravity="center"
         app:layout_constraintBottom_toBottomOf="parent"
